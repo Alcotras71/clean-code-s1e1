@@ -153,31 +153,31 @@
 .delete__img {
   height: 2em;
   transform: rotateZ(45deg);
-  transition: transform 200ms ease-in
+  transition: transform 200ms ease-in;
 }
 
 .delete__img:hover {
-  transform: rotateZ(0)
+  transform: rotateZ(0);
 }
 
 /* Completed */
 
 #completed .field__name {
   text-decoration: line-through;
-  color:#888
+  color: #888;
 }
 
 /* Edit Task */
 
 .todo-list__item .field__text {
-  display: none
+  display: none;
 }
 
 .edit-mode .field__text {
   display: inline-block;
-  width: 224px
+  width: 224px;
 }
 
 .edit-mode .field__name {
-  display: none
+  display: none;
 }
