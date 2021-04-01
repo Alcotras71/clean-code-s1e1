@@ -11,65 +11,89 @@
         media="screen"
         charset="utf-8">
 </head>
-<body class="page">
-  <article class="about">
-    <img class="about__img" src="./eisenhower-matrix.jpg" alt="eisenhower-matrix">
-    <a class="more-info" href="https://goal-life.com/page/method/matrix-eisenhower">
+<body class="body">
+	<!-- start article -->
+  <article class="article">
+    <img class="article__img img" src="./eisenhower-matrix.jpg" alt="eisenhower-matrix">
+    <a class="article__link link" href="https://goal-life.com/page/method/matrix-eisenhower">
       Want more details?
     </a>
   </article>
+	<!-- end article -->
+
+	<!-- start main -->
   <main class="main">
-    <section id="main-top">
-      <label class="title main-top__title" for="new-task">Add Item</label>
-      <div class="task-wrap">
+
+		<!-- start add-item section -->
+    <section class="section add-item">
+      <label class="label title add-item__title" for="new-task">Add Item</label>
+      <div class="add-item__wrapper">
         <input
             id="new-task"
-            class="field field__text task"
+            class="input add-item__input input_type_text task"
             type="text">
-        <button class="btn main-top__btn">Add</button>
+        <button class="btn add-item__btn">Add</button>
       </div>
     </section>
-		<section>
-			<h3 class="title">Todo</h3>
-			<ul class="todo-list" id="todo">
-				<li class="todo-list__item">
-					<input class="field field__checkbox" type="checkbox">
-					<label class="field__name task">Pay Bills</label>
-					<input class="field field__text task" type="text">
+		<!-- end add-item section -->
+
+		<!-- start todo section -->
+		<section class="section todo">
+			<h3 class="title todo__title">Todo</h3>
+
+			<!-- start todo-list -->
+			<ul class="list todo__list">
+				<li class="list__item">
+					<input class="input list__input input_type_checkbox" type="checkbox">
+					<label class="label list__name task">Pay Bills</label>
+					<input class="input input_type_text task" type="text">
 					<button class="btn edit">Edit</button>
 					<button class="btn delete">
 						<img class="delete__img" src="./remove.svg" alt="">
 					</button>
 				</li>
-				<li class="todo-list__item edit-mode">
-					<input class="field field__checkbox" type="checkbox">
-					<label class="field__name task">Go Shopping</label>
+
+				<li class="list__item edit-mode">
+					<input class="input list__input input_type_checkbox" type="checkbox">
+					<label class="label list__name task">Go Shopping</label>
 					<input
 							type="text"
 							value="Go Shopping"
-							class="field field__text task">
+							class="input list__input input_type_text task">
 					<button class="btn edit">Save</button>
 					<button class="btn delete">
 						<img class="delete__img" src="./remove.svg" alt="">
 					</button>
 				</li>
 			</ul>
+			<!-- end todo-list -->
+
 		</section>
-		<section>
+		<!-- end todo section -->
+
+		<!-- start completed section -->
+		<section class="section completed">
 			<h3 class="title">Completed</h3>
-			<ul class="todo-list" id="completed">
-				<li class="todo-list__item">
-					<input class="field field__checkbox" type="checkbox" checked>
-					<label class="field__name task">See the Doctor</label>
-					<input class="field field__text task" type="text">
+
+			<!-- start completed list -->
+			<ul class="list" id="completed">
+				<li class="list__item">
+					<input class="input list__input input_type_checkbox" type="checkbox" checked>
+					<label class="label list__name task">See the Doctor</label>
+					<input class="input input_type_text task" type="text">
 					<button class="btn edit">Edit</button>
 					<button class="btn delete">
 						<img class="delete__img" src="./remove.svg" alt="">
 					</button>
 				</li>
 			</ul>
+			<!-- end completed list -->
+
 		</section>
+		<!-- end completed section -->
+
   </main>
+	<!-- end main -->
 
   <script src="app.js"></script>
 </body>

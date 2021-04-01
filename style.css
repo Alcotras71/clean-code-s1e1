@@ -1,29 +1,29 @@
 /* Basic Style */
 
-.page {
+.body {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
 }
 
-.about {
+.article {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.about__img {
+.article__img {
   width: 100%;
 }
 
-.more-info {
+.article__link {
   font-family: fantasy, cursive;
 }
 
 @media (max-width: 768px) {
 
-  .about {
+  .article {
     text-align: center;
   }
 
@@ -41,21 +41,21 @@
   flex-grow: 1;
 }
 
-.task-wrap {
+.add-item__wrapper {
   display: flex;
 }
 
-.todo-list {
+.list {
   margin: 0;
   padding: 0px;
 }
 
-.todo-list__item,
+.list__item,
 .title {
   list-style: none;
 }
 
-.field,
+.input,
 .btn {
   outline: none;
 }
@@ -86,7 +86,7 @@
   text-transform: uppercase;
 }
 
-.field__text {
+.input_type_text {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -99,28 +99,28 @@
   color: #888;
 }
 
-.field__text:focus {
+.input_type_text:focus {
   color: #333;
 }
 
 /* New Task */
 
-.main-top__title {
+.add-item__title {
   display: block;
   margin: 0 0 20px;
 }
 
-#new-task {
+.add-item__input {
   width: 318px;
 }
 
-.main-top__btn:hover {
+.add-item__btn:hover {
   color: #0fc57c;
 }
 
 /* Task list */
 
-.todo-list__item {
+.list__item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -129,22 +129,22 @@
   align-items: center;
 }
 
-.todo-list__item > * {
+.list__item > * {
   vertical-align: middle;
 }
 
-.field__checkbox {
+.input_type_checkbox {
   margin: 0 10px;
 }
 
-.field__name {
+.list__name {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.todo-list__item > .field__text {
+.list__item > .input_type_text {
   width: 226px;
 }
 
@@ -164,22 +164,22 @@
 
 /* Completed */
 
-#completed .field__name {
+.completed .list__name {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
 
-.todo-list__item > .field__text {
+.list__item > .input_type_text {
   display: none;
 }
 
-.edit-mode > .field__text {
+.edit-mode > .input_type_text {
   display: inline-block;
   width: 224px;
 }
 
-.edit-mode > .field__name {
+.edit-mode > .list__name {
   display: none;
 }
